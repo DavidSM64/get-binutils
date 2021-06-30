@@ -1,6 +1,6 @@
 # get-binutils
 
-This is a simple bash script that downloads, builds, and retrieves useful gnu mips64-elf tools used in N64 decompilation projects.  
+This is a simple bash script that downloads, builds, and retrieves useful gnu mips64-elf tools used in N64 decompilation projects. This is useful for platforms like ARM, where mips64 binutil packages are not avaliable.  
 
 By default this script will get `as`, `ar`, `ld`, `objcopy`, and `objdump`. If you want to add any more programs, then you just need to edit the lines after `PRINT_STEP 5`. Note that some files get built as `<program>-new` for some reason, so you'll need to use the`RENAME_AND_INSTALL_FILE` macro instead of the `INSTALL_FILE` macro in that case.  
 
