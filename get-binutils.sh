@@ -70,12 +70,8 @@ PRINT_STEP 5 "INSTALLING BUILT FILES"
 
 # Add or remove programs here.
 INSTALL_FILE ar $binFolder
-RENAME_AND_INSTALL_FILE nm-new $binFolder nm
 INSTALL_FILE objcopy $binFolder
 INSTALL_FILE objdump $binFolder
-INSTALL_FILE ranlib $binFolder
-INSTALL_FILE readelf $binFolder
-RENAME_AND_INSTALL_FILE strip-new $binFolder strip
 RENAME_AND_INSTALL_FILE as-new $gasFolder as
 RENAME_AND_INSTALL_FILE ld-new $ldFolder ld
 
